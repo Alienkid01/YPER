@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Dashboard</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">YPER</div>
+            <nav class="menu">
+                <a href="#">Dashboard</a>
+                <a href="#">Card</a>
+                <a href="#">Transaction</a>
+                <a href="#">Reporting</a>
+                <a href="#">Account</a>
+            </nav>
+            <div class="support-settings">
+                <p>Support</p>
+                <p>Settings</p>
+            </div>
+            <div class="user-info">
+                <p>Welcome</p>
+                <p></p>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <header class="header">
+                <h1>Banking Dashboard</h1>
+                <p>Welcome back, USER!</p>
+            </header>
+            <section class="controls">
+                <button>12 months</button>
+                <button>30 days</button>
+                <button>7 days</button>
+                <button>24 hours</button>
+            </section>
+            <section class="stats">
+                <div class="card primary-account">
+                    <h2>Primary Account</h2>
+                    <p>$40,206.20</p>
+                </div>
+                <div class="card income">
+                    <h2>Total Income</h2>
+                    <p>$6,421.10</p>
+                </div>
+                <div class="card expenses">
+                    <h2>Total Expenses</h2>
+                    <p>$561.34</p>
+                </div>
+                <div class="money-flow chart">
+                  <h4>Money Flow</h4>
+                  <div class="chart-bars">
+                      <div class="month-bar positive" data-month="Jan" style="height: 60%;"></div>
+                      <div class="month-bar negative" data-month="Feb" style="height: 40%;"></div>
+                      <div class="month-bar positive" data-month="Mar" style="height: 70%;"></div>
+                      <div class="month-bar negative" data-month="Apr" style="height: 30%;"></div>
+                      <div class="month-bar positive" data-month="May" style="height: 80%;"></div>
+                      <div class="month-bar negative" data-month="Jun" style="height: 50%;"></div>
+                      <div class="month-bar positive" data-month="Jul" style="height: 90%;"></div>
+                      <div class="month-bar negative" data-month="Aug" style="height: 20%;"></div>
+                      <!-- Repeat for each month -->
+                  </div>
+              </div>
+            </section>
+            <section class="graphs">
+                <div class="chart money-flow">Money Flow Chart</div>
+                <div class="chart transactions">Recent Transactions</div>
+            </section>
+        </main>
+    </div>
+    <script type="module" defer crossorigin data-id="a453f7f1-5b3e-4298-b820-d3916c6d1cab" data-name="MantaAssistant" src="https://manta.barnaclestudios.com/scripts/site/widget.js"></script>
+</body>
+</html>

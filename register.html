@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yper Bank - Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#" onsubmit="register(event)">
+      <h2>Create an Account</h2>
+
+      <div class="input-field">
+        <input type="text" id="username" required>
+        <label>Username</label>
+      </div>
+
+      <div class="input-field">
+        <input type="email" id="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-field">
+        <input type="password" id="password" required>
+        <label>Password</label>
+      </div>
+
+      <div class="input-field">
+        <input type="password" id="confirmPassword" required>
+        <label>Confirm Password</label>
+      </div>
+
+      <div class="terms">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+      </div>
+
+      <button type="submit">Register</button>
+
+      <div class="login">
+        <p>Already have an account? <a href="index.html">Login</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function register(event) {
+      event.preventDefault(); // Prevent form submission reload
+
+      // Get form field values
+      const username = document.getElementById("username").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+
+      // Basic validation
+      if (password !== confirmPassword) {
+        alert("Passwords do not match. Please try again.");
+        return;
+      }
+
+      // Registration successful (for example purposes)
+      alert("Registration successful!");
+      window.location.href = "index.html"; // Redirect to login page
+    }
+  </script>
+</body>
+</html>
